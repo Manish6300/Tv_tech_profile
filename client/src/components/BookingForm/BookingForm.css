@@ -1,0 +1,74 @@
+.booking-section {
+  background: linear-gradient(135deg, var(--bg) 0%, rgba(37,99,235,0.05) 100%);
+}
+.booking-wrap {
+  display: grid; grid-template-columns: 300px 1fr; gap: 2rem;
+  background: var(--bg-card); border-radius: var(--radius-lg);
+  overflow: hidden; box-shadow: var(--shadow-xl); border: 1px solid var(--border);
+}
+.booking-info {
+  background: linear-gradient(135deg, var(--primary-dark), var(--primary));
+  padding: 2.5rem 2rem; color: #fff;
+}
+.booking-info h3 { font-size: 1.3rem; margin-bottom: 1.5rem; }
+.booking-features { display: flex; flex-direction: column; gap: 0.85rem; margin-bottom: 0; }
+.booking-features li { font-size: 0.9rem; opacity: 0.9; }
+
+.booking-location-note {
+  margin-top: 2rem; padding: 1rem;
+  background: rgba(255,255,255,0.12); border-radius: var(--radius);
+  border: 1px solid rgba(255,255,255,0.2);
+}
+.booking-location-note strong { display: block; margin-bottom: 0.4rem; font-size: 0.9rem; }
+.booking-location-note p { font-size: 0.8rem; opacity: 0.85; margin: 0; line-height: 1.5; }
+
+.booking-form { padding: 2rem; }
+
+.coords-confirm {
+  margin-top: 0.5rem; padding: 0.5rem 0.85rem;
+  background: rgba(16,185,129,0.1); border: 1px solid rgba(16,185,129,0.3);
+  border-radius: var(--radius); font-size: 0.8rem;
+  color: var(--success); font-weight: 500;
+}
+
+@media (max-width: 768px) {
+  .booking-wrap { grid-template-columns: 1fr; }
+}
+
+.technician-location-section {
+  margin-top: 3rem; padding: 2rem 0;
+}
+
+.tech-location-card {
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  border-radius: var(--radius-lg); padding: 2.5rem;
+  text-align: center; color: #fff;
+  box-shadow: var(--shadow-lg); border: 1px solid rgba(255,255,255,0.1);
+}
+
+.tech-location-icon {
+  font-size: 2.5rem; margin-bottom: 1rem; color: #FFD700;
+}
+
+.tech-location-card h3 {
+  font-size: 1.5rem; margin: 1rem 0; margin-bottom: 0.5rem;
+}
+
+.tech-address {
+  font-size: 1rem; margin-bottom: 1.5rem;
+  line-height: 1.6; color: rgba(255,255,255,0.95);
+  max-width: 500px; margin-left: auto; margin-right: auto;
+}
+
+.tech-map-btn {
+  display: inline-block; padding: 0.8rem 2rem;
+  background: rgba(255,255,255,0.2); border: 2px solid rgba(255,255,255,0.4);
+  border-radius: var(--radius); color: #fff; text-decoration: none;
+  font-weight: 600; font-size: 1rem;
+  transition: all 0.3s ease;
+}
+
+.tech-map-btn:hover {
+  background: rgba(255,255,255,0.3); border-color: rgba(255,255,255,0.7);
+  transform: translateY(-3px); box-shadow: var(--shadow-lg);
+}

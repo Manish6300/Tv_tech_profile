@@ -1,0 +1,11 @@
+const express = require('express');
+const router = express.Router();
+const { getServices, getAllServices, createService, updateService, deleteService } = require('../controllers/serviceController');
+const { protect } = require('../middleware/auth');
+const upload = require('../middleware/upload');
+router.get('/', getServices);
+router.get('/all', protect, getAllServices);
+router.post('/', protect, upload.single('image'), createService);
+router.put('/:id', protect, upload.single('image'), updateService);
+router.delete('/:id', protect, deleteService);
+module.exports = router;

@@ -1,0 +1,25 @@
+.float-whatsapp {
+  position: fixed; bottom: 2rem; left: 2rem; z-index: 999;
+  width: 58px; height: 58px; border-radius: 50%;
+  background: #25D366; color: #fff;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 20px rgba(37,211,102,0.5);
+  transition: var(--transition);
+  animation: pulse-wa 2s infinite;
+}
+.float-whatsapp:hover { transform: scale(1.1); box-shadow: 0 6px 25px rgba(37,211,102,0.7); }
+@keyframes pulse-wa {
+  0%,100% { box-shadow: 0 4px 20px rgba(37,211,102,0.5) }
+  50% { box-shadow: 0 4px 35px rgba(37,211,102,0.8) }
+}
+
+.scroll-top-btn {
+  position: fixed; bottom: 2rem; right: 2rem; z-index: 999;
+  width: 46px; height: 46px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--primary-dark));
+  color: #fff; border: none; cursor: pointer;
+  display: flex; align-items: center; justify-content: center;
+  box-shadow: 0 4px 15px rgba(37,99,235,0.4);
+  transition: var(--transition);
+}
+.scroll-top-btn:hover { transform: translateY(-3px); box-shadow: 0 6px 20px rgba(37,99,235,0.6); }

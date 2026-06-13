@@ -1,0 +1,56 @@
+.login-page {
+  min-height: 100vh; display: flex; align-items: center; justify-content: center;
+  background: linear-gradient(135deg, #0F172A, #1E3A5F, #1E40AF);
+  position: relative; overflow: hidden; padding: 2rem;
+}
+.login-orb { position: absolute; border-radius: 50%; filter: blur(80px); opacity: 0.2; pointer-events: none; }
+.o1 { width: 500px; height: 500px; background: var(--primary); top: -150px; right: -100px; }
+.o2 { width: 400px; height: 400px; background: var(--secondary); bottom: -100px; left: -100px; }
+.o3 { width: 300px; height: 300px; background: var(--accent); top: 50%; left: 50%; transform: translate(-50%,-50%); }
+
+.login-card {
+  background: rgba(255,255,255,0.07);
+  backdrop-filter: blur(30px);
+  border: 1px solid rgba(255,255,255,0.15);
+  border-radius: var(--radius-lg);
+  padding: 3rem 2.5rem;
+  width: 100%; max-width: 420px;
+  text-align: center; position: relative;
+  box-shadow: 0 25px 50px rgba(0,0,0,0.4);
+}
+
+.login-logo {
+  width: 72px; height: 72px; border-radius: 50%;
+  background: linear-gradient(135deg, var(--primary), var(--secondary));
+  display: flex; align-items: center; justify-content: center;
+  font-size: 1.8rem; color: #fff; margin: 0 auto 1.25rem;
+  box-shadow: 0 8px 25px rgba(37,99,235,0.4);
+}
+.login-card h2 { color: #fff; font-size: 1.75rem; margin-bottom: 0.25rem; }
+.login-sub { color: rgba(255,255,255,0.6); margin-bottom: 2rem; font-size: 0.9rem; }
+
+.login-card .form-group label { color: rgba(255,255,255,0.8); text-align: left; }
+.login-card .form-group input {
+  background: rgba(255,255,255,0.08); border-color: rgba(255,255,255,0.15); color: #fff;
+}
+.login-card .form-group input::placeholder { color: rgba(255,255,255,0.4); }
+.login-card .form-group input:focus { border-color: var(--secondary); background: rgba(255,255,255,0.12); }
+
+.pass-field { position: relative; }
+.pass-toggle {
+  position: absolute; right: 1rem; top: 50%; transform: translateY(-50%);
+  color: rgba(255,255,255,0.5); font-size: 0.9rem; background: none; border: none; cursor: pointer;
+}
+.pass-toggle:hover { color: #fff; }
+
+.back-link {
+  display: flex; align-items: center; justify-content: center; gap: 0.4rem;
+  margin-top: 0.75rem;
+  color: rgba(255,255,255,0.4); font-size: 0.875rem;
+  transition: color 0.2s;
+}
+.back-link:hover { color: var(--secondary); }
+
+@media (max-width: 480px) {
+  .login-card { padding: 2rem 1.5rem; }
+}
